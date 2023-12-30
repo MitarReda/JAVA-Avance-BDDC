@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>II-BDCC</title>
+</head>
+<body>
+    <style>
+        body{
+            margin: auto;
+            padding: 5%;
+        }
+        .box{
+            border: 1px solid gray;
+            height: 200px;
+            width: 200px;
+            background-color: palegreen;
+            border-top-right-radius: 200px;
+            
+            
+        }
+        .box2{
+            border: 1px solid gray;
+            height: 200px;
+            width: 200px;
+            background-color: pink;
+            border-bottom-left-radius: 200px;
+            
+        }
+        .cercle{
+            border: 1px solid gray;
+            height: 200px;
+            width: 200px;
+            background-color:white;
+            border-radius: 50%;
+            transform: scale(1.4, 0.07);
+            padding: auto;
+            
+        }
+        .cercle2{
+            border: 5px solid rgb(16, 16, 16);
+            height: 120px;
+            width: 120px;
+            
+            border-radius: 50%;
+            transform: scale(1.4, 0.7);
+            margin: auto;
+            position:center;
+            
+        }
+        .outer{
+            background-color: black;
+            margin: auto;
+            padding: 50px;
+            border: 1px solid gray;
+            box-shadow: 0px 2px 90px 0px rgba(0, 0, 0, 0.889);
+        }
+        .container{
+            margin: auto;
+            width: 25%;
+            padding: 20px;
+            border: 1px solid gray;
+            box-shadow: 0px 6px 30px 0px rgba(0, 0, 0, 0.8); 
+        }
+        .box:hover{
+            transform: rotate(90deg);
+            transition: 1s;
+        }
+        .box2:hover{
+            transform: rotate(90deg);
+            transition: 1s;
+        }
+        .box1:hover{
+            transform: rotate(300deg);
+            transition: 1s;
+        }
+        
+        div{
+            display: block;
+        }
+        
+        .outer:hover .box1 {
+            transform: rotate(350deg);
+            transition: 1s;
+        }
+        .outer:hover .box2,
+        .outer:hover .box {
+            transform: rotate(90deg);
+            transition: 1s;
+        }
+        .box1, .box2, .box {
+            transition: 1s;
+        }
+    </style>
+    <div class="container">
+        <div class="outer">
+            <div class="box"></div>
+            <div class="box1">
+                <div class="cercle">
+                    <div class="cercle2">
+                    </div>
+                </div>
+            </div>
+            <div class="box2"></div>
+        </div>
+    </div>
+    
+</body>
+</html>
